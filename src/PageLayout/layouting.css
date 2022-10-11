@@ -1,0 +1,85 @@
+  div.layout-container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    background-color: silver;
+}
+
+div.sidebar {
+    display: flex;
+    height: 100%;
+    width: 15%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url("../material/Alice1.jpg");
+    background-size: cover;
+    background-position: 50%;
+    
+}
+
+.sidebar-items {
+    color: white ;
+    margin-bottom: 10px;
+}
+
+div.right-side-container {
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.active {
+    color: red;
+}
+
+div.content {
+    display: flex;
+    height: 90%;
+    align-items: center;
+    justify-content: center;
+    background: url("../material/Reimu1.jpg");
+    background-size: cover;
+    background-position: 10%;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);  
+}
+
+.bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    height: 40%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+  }
+
+div.navbar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 8%;
+    background: black;    
+}
+
+div.footer {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 20px;
+    height: 10%;
+    background: black;
+    color: white;
+    background-attachment: fixed;
+}
+
