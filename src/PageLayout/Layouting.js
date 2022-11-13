@@ -47,11 +47,8 @@ export const Layouting = () => {
                 <NavLink className="sidebar-items" to={"/rules"}>
                     Rules
                 </NavLink>
-            </div>
-            
-            
-            <div className="right-side-container">
-                
+            </div>  
+            <div className="right-side-container">    
                 <div className="navbar">
                     <NavLink className="sidebar-items" to={"/Home"}>
                        <h1><HomeOutlined /></h1> 
@@ -67,7 +64,6 @@ export const Layouting = () => {
                         {<UserOutlined />}
                         Login
                     </Button>
-
                     <Popconfirm
                         title="Are you sure?"
                         open={open}
@@ -83,15 +79,14 @@ export const Layouting = () => {
                             LOG OUT
                         </Button>
                     </Popconfirm>
-                    <div className="bg-text"></div>
                 </div>
-                    <div className="content">
-                        <Outlet />
-                    </div>
+                <div className="bg-text">
+                    <Outlet />
+                </div>
+                    <div className="content"></div>
                     <div className="footer">
                         Copyright
                     </div>
-                
             </div>
         </div>
        

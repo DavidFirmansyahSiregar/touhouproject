@@ -15,7 +15,6 @@ div.sidebar {
     background:url("../material/Alice1.jpg");
     background-size: cover;
     background-position: 50%;
-    
 }
 
 .sidebar-items {
@@ -53,12 +52,13 @@ div.content {
     font-weight: bold;
     border: 3px solid #f1f1f1;
     position: absolute;
-    height: 40%;
+    height: 60%;
     top: 50%;
     left: 50%;
+    margin-left: 8%;
     transform: translate(-50%, -50%);
     z-index: 2;
-    width: 50%;
+    width: 60%;
     padding: 20px;
     text-align: center;
   }
