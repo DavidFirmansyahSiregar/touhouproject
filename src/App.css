@@ -1,23 +1,68 @@
 body{
-  align-items: center;
   width: 100%;
-  margin: 0;
-  background-image: url("../src/material/field.jpg");
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
-  background-repeat: no-repeat;
-  z-index: -1;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url('./material/field.jpg');
 }
 
-.column {
+.row{
+  align-items: center;
+}
+
+.column1{
+  background-color: tomato;
+  border: 2px solid gray;
   width: 120px;
   height: 120px;
   padding: 10px;
-  margin-top: 60%;
-  margin-left: 50%;
-  background-image: url("../src/material/Reimu.jpg");
-  text-align: center;
-  background-position: 40%;
-  background-size: cover;
-  z-index: 0;
+  float: left;
+  margin-top: 10px;
+  margin-left: 45%;
+}
+
+.column2{
+  background-color: tomato;
+  border: 2px solid gray;
+  width: 40px;
+  height: 70px;
+  padding: 10px;
+  float: left;
+  margin-top: 10px;
+}
+
+.column3{
+  background-color: tomato;
+  border: 2px solid gray;
+  width: 40px;
+  height: 70px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.column4{
+  background-color: tomato;
+  border: 2px solid gray;
+  width: 40px;
+  height: 70px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+
+.content {
+    height: 200px;
+    width: 70%;
+    text-align: left;
+    justify-content: center;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    margin-left: 10px;
+    margin-top: 130px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
 }
