@@ -1,11 +1,10 @@
 import React, { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
-import { Button, Popconfirm, Layout } from "antd"
+import { Button, Popconfirm, } from "antd"
 import { HomeOutlined, PoweroffOutlined, SketchOutlined, UserOutlined } from '@ant-design/icons'
 
 import "./layouting.css";
 
-const { Header, Content, Sider, Footer } = Layout;
 export const Layouting = () => {
     const navigate = useNavigate();
 
