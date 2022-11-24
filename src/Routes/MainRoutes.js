@@ -6,7 +6,8 @@ import { Games } from "../Pages/Games/Games";
 import { MainStory } from "../Pages/MainStory/Mainstory";
 import { Characters } from "../Pages/Character/Character";
 import { Ability } from "../Pages/Ability/Ability";
-import { Rule } from "../Pages/Rule/Rule"
+import { Rule } from "../Pages/Rule/Rule";
+import { Forum } from "../Pages/Forum";
 
 export const MainRoutes = () => {
   return (
@@ -18,6 +19,7 @@ export const MainRoutes = () => {
             <Route path="/perks" element={<Ability />} />
             <Route path="/rules" element={<Rule />} />
             <Route path="/story" element={<MainStory />} />
+            <Route path="/forum" element={<Forum />} />
         </Route>    
     </Routes>
   )

@@ -55,6 +55,9 @@ export const Layouting = () => {
                     <NavLink className="sidebar-items" to={"/Games"}>
                         <h1><SketchOutlined />Games</h1>
                     </NavLink>
+                    <NavLink className="sidebar-items" to={"/Forum"}>
+                        <h1>Forum</h1>
+                    </NavLink>
                         
                     <Button
                         type="primary"
