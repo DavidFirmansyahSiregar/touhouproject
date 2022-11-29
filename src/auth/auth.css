@@ -1,0 +1,23 @@
+.header {
+    background-color: dodgerblue;
+    padding: 30px;
+}
+
+.content {
+    background-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: dodgerblue;
+    padding: 30px;
+}
+
+.slide-1 {
+    background-image: url("../material/Komano.png");
+}
+
+.slide-2 {
+    background-image: url("../material/Alice.png");
+}
