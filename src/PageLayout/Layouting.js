@@ -49,23 +49,17 @@ export const Layouting = () => {
             </div>  
             <div className="right-side-container">    
                 <div className="navbar">
-                    <NavLink className="sidebar-items" to={"/Home"}>
+                    <NavLink className="navbar-item" to={"/Home"}>
                        <h1><HomeOutlined /></h1> 
                     </NavLink>
-                    <NavLink className="sidebar-items" to={"/Games"}>
+                    <NavLink className="navbar-item" to={"/Games"}>
                         <h1><SketchOutlined />Games</h1>
                     </NavLink>
-                    <NavLink className="sidebar-items" to={"/Forum"}>
+                    <NavLink className="navbar-item" to={"/Forum"}>
                         <h1>Forum</h1>
                     </NavLink>
                         
-                    <Button
-                        type="primary"
-                        onClick={handleOk}
-                    >
-                        {<UserOutlined />}
-                        Login
-                    </Button>
+                    
                     <Popconfirm
                         title="Are you sure?"
                         open={open}

@@ -7,7 +7,7 @@ import { MainStory } from "../Pages/MainStory/Mainstory";
 import { Characters } from "../Pages/Character/Character";
 import { Ability } from "../Pages/Ability/Ability";
 import { Rule } from "../Pages/Rule/Rule";
-import { Forum } from "../Pages/Forum";
+import { Forum } from "../Pages/Forum/Forum";
 
 export const MainRoutes = () => {
   return (

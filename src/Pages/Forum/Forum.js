@@ -3,39 +3,22 @@ import { Button, Drawer } from 'antd';
 
 export const Forum = () => {
   const [open, setOpen] = useState(false);
-  const [childrenDrawer, setChildrenDrawer] = useState(false);
   const showDrawer = () => {
     setOpen(true);
   };
   const onClose = () => {
     setOpen(false);
   };
-  const showChildrenDrawer = () => {
-    setChildrenDrawer(true);
-  };
-  const onChildrenDrawerClose = () => {
-    setChildrenDrawer(false);
-  };
   return (
     <>
       <Button type="primary" onClick={showDrawer}>
-        Open drawer
+        Open
       </Button>
-      <Drawer title="Multi-level drawer" width={520} closable={false} onClose={onClose} open={open}>
-        <Button type="primary" onClick={showChildrenDrawer}>
-          Two-level drawer
-        </Button>
-        <Drawer
-          title="Two-level Drawer"
-          width={320}
-          closable={false}
-          onClose={onChildrenDrawerClose}
-          open={childrenDrawer}
-        >
-          This is two-level drawer
-        </Drawer>
+      <Drawer title="Basic Drawer" placement="right" onClose={onClose} open={open}>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
+        <p>Some contents...</p>
       </Drawer>
     </>
   );
 };
-
