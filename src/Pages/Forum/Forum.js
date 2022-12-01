@@ -10,7 +10,7 @@ export const Forum = () => {
     setOpen(false);
   };
   return (
-    <>
+    <div>
       <Button type="primary" onClick={showDrawer}>
         Open
       </Button>
@@ -19,6 +19,6 @@ export const Forum = () => {
         <p>Some contents...</p>
         <p>Some contents...</p>
       </Drawer>
-    </>
+    </div>
   );
 };
