@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import MemoryCard from "./components/MemoryCard";
 import { createMatrix } from './helper/shuffle';
 
+import './games.css';
+
 export const Games = () => {
   const [grid, setGrid] = useState(createMatrix());
   const [matched, setMatched] = useState([]);
