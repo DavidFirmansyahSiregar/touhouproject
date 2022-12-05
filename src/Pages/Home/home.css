@@ -1,0 +1,28 @@
+.container {
+    padding: 20px;
+    background-color: fixed;
+  }
+  
+  input[type=text], input[type=submit] {
+    width: 20%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 5px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  input[type=checkbox] {
+    margin-top: 16px;
+  }
+  
+  input[type=submit] {
+    background-color: transparent;
+    color: white;
+    border: none;
+  }
+  
+  input[type=submit]:hover {
+    opacity: 0.8;
+    background-color: red;
+  }
