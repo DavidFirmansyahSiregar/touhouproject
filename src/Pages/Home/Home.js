@@ -6,7 +6,7 @@ export const Home = () => {
     <div>
         <h2>CSS Newsletter</h2>
 
-    <form action="/action_page.php">
+    <form action="/games">
       <div className="container">
         <h2>Subscribe to our Newsletter</h2>
         <p></p>
