@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { NavLink, Outlet, useNavigate } from "react-router-dom";
+import { NavLink, Outlet, } from "react-router-dom";
 import { Button, Popconfirm, } from "antd"
-import { HomeOutlined, PoweroffOutlined, SketchOutlined, UserOutlined } from '@ant-design/icons'
+import { HomeOutlined, PoweroffOutlined, SketchOutlined, } from '@ant-design/icons'
 import { Loading } from "../animation/loading"
 import "./layouting.css";
 
 export const Layouting = () => {
-    const navigate = useNavigate();
+    // const navigate = useNavigate();
 
     const [confirmLoading, setConfirmLoading] = useState(false);
     const [open, setOpen] = useState(false);
@@ -32,9 +32,7 @@ export const Layouting = () => {
 
     return (
         <div className="layout-container">
-            <div className="loading">
-                <Loading />
-            </div>
+            
             <div className="sidebar">
                 <NavLink className="sidebar-items" to={"/story"}>
                     Main Story
@@ -48,6 +46,9 @@ export const Layouting = () => {
                 <NavLink className="sidebar-items" to={"/rules"}>
                     Rules
                 </NavLink>
+                <div>
+                <Loading />
+            </div>
             </div>  
             <div className="right-side-container">    
                 <div className="navbar">
