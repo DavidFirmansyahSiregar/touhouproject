@@ -8,8 +8,6 @@ export const Home = () => {
 
     <form action="/games">
       <div className="container">
-        <h2>Subscribe to our Newsletter</h2>
-        <p></p>
       </div>
       <div className="container">
         <input type="submit" value="Subscribe"></input>

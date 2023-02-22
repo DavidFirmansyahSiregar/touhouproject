@@ -8,6 +8,7 @@ import { Characters } from "../Pages/Character/Character";
 import { Ability } from "../Pages/Ability/Ability";
 import { Rule } from "../Pages/Rule/Rule";
 import { Forum } from "../Pages/Forum/Forum";
+import { Loading } from "../animation/loading"
 
 export const MainRoutes = () => {
   return (
@@ -20,7 +21,8 @@ export const MainRoutes = () => {
             <Route path="/rules" element={<Rule />} />
             <Route path="/story" element={<MainStory />} />
             <Route path="/forum" element={<Forum />} />
-        </Route>    
+        </Route>
+          <Route path="/loading" element={<Loading />} />
     </Routes>
   )
 }

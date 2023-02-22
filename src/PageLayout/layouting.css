@@ -89,3 +89,8 @@ div.footer {
     background-attachment: fixed;
 }
 
+.loading{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+}

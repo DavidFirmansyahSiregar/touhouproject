@@ -61,7 +61,7 @@ export const Games = () => {
           if (paired.length === 12) {
             setTimeout(() => {
               alert(
-                "Yayy. You have solved the game. Would you like to play again?"
+                "Selamat, Anda resmi menjadi wibu!!!"
               );
               resetGame();
             }, 2000);

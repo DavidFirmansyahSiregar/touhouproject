@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink, Outlet, useNavigate } from "react-router-dom";
 import { Button, Popconfirm, } from "antd"
 import { HomeOutlined, PoweroffOutlined, SketchOutlined, UserOutlined } from '@ant-design/icons'
-
+import { Loading } from "../animation/loading"
 import "./layouting.css";
 
 export const Layouting = () => {
@@ -32,7 +32,9 @@ export const Layouting = () => {
 
     return (
         <div className="layout-container">
-            
+            <div className="loading">
+                <Loading />
+            </div>
             <div className="sidebar">
                 <NavLink className="sidebar-items" to={"/story"}>
                     Main Story
