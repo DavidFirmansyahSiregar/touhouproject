@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import MemoryCard from "./components/MemoryCard";
 import { createMatrix } from './helper/shuffle';
-import { Stopwatch } from "./settimer";
+// import { Stopwatch } from "./settimer";
 
 import './games.css';
 
@@ -9,12 +9,27 @@ export const Games = () => {
   const [grid, setGrid] = useState(createMatrix());
   const [matched, setMatched] = useState([]);
   const [focused, setFocused] = useState([]);
+  const [time, setTime] = useState(0);
+  const [running, setRunning] = useState(false);
 
   const resetGame = () => {
     setMatched([]);
     setFocused([]);
     setGrid(createMatrix());
   };
+    
+    useEffect(() => {
+      let interval;
+      if (running) {
+        interval = setInterval(() => {
+          setTime((prevTime) => prevTime + 10);
+        }, 10);
+      } else if (!running) {
+        clearInterval(interval);
+      }
+      return () => clearInterval(interval);
+    }, [running]);
+  
 
   const handleClickCard = (event) => {
     // logic for persisting the card(s) if matched otherwise hide them
@@ -41,6 +56,7 @@ export const Games = () => {
           )
         );
         setFocused(selection);
+        setRunning(true);
       } else if (focused.length === 1) {
         // second card is selected
         let prevSelection = focused[0];
@@ -65,7 +81,9 @@ export const Games = () => {
                 "Selamat, Anda resmi menjadi wibu!!!"
               );
               resetGame();
-            }, 2000);
+              setRunning(false);
+              setTime(0);
+            },);
           }
         } else {
           // show only matched and previously selected card. Hide selection after 2s
@@ -102,8 +120,12 @@ export const Games = () => {
           />
         ))}
       </section>
-      <div>
-        <Stopwatch />
+      <div className="timer">
+      <div className="numbers">
+          <span>{("0" + Math.floor((time / 60000) % 60)).slice(-2)}:</span>
+          <span>{("0" + Math.floor((time / 1000) % 60)).slice(-2)}:</span>
+          <span>{("0" + ((time / 10) % 100)).slice(-2)}</span>
+        </div>
       </div>
     </div>
   );

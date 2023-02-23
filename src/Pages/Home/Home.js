@@ -12,7 +12,8 @@ export const Home = () => {
       <div className="container">
         <input type="submit" value="Subscribe"></input>
       </div>
-     
+      <div>
+      </div>
     </form>
     </div>
   )

@@ -81,7 +81,6 @@ export const Layouting = () => {
                 </div>
                 <div className="bg-text">
                     <Outlet />
-                   
                 </div>
                     <div className="content"></div>
                     <div className="footer">
