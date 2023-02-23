@@ -47,7 +47,8 @@ div.content {
     background-position: 10%;
     background-repeat: no-repeat;
     filter: blur(8px);
-    -webkit-filter: blur(8px);  
+    -webkit-filter: blur(8px); 
+    object-fit: cover; 
 }
 
 .bg-text {

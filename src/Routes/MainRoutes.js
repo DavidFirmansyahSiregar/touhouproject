@@ -9,6 +9,7 @@ import { Ability } from "../Pages/Ability/Ability";
 import { Rule } from "../Pages/Rule/Rule";
 import { Forum } from "../Pages/Forum/Forum";
 import { Loading } from "../animation/loading"
+import { Stopwatch } from "../Pages/Games/settimer"
 
 export const MainRoutes = () => {
   return (
@@ -23,6 +24,7 @@ export const MainRoutes = () => {
             <Route path="/forum" element={<Forum />} />
         </Route>
           <Route path="/loading" element={<Loading />} />
+          <Route path="/timer" element={<Stopwatch  />} />
     </Routes>
   )
 }
