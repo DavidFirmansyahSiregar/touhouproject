@@ -27,7 +27,7 @@
     width: calc(25% - 10px);
     height: calc(25% -10px);
     /* margin: 5px; */
-    /* display: flex; */
+    display: flex;
     position: relative;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     transform: scale(1);
@@ -61,4 +61,9 @@
 
 .memory-card.flip {
     transform:rotateY(180deg)
+}
+
+.timer{
+    width:100px;
+    height:100px;
 }

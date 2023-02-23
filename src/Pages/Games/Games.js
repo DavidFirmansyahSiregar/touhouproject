@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import MemoryCard from "./components/MemoryCard";
 import { createMatrix } from './helper/shuffle';
+import { Stopwatch } from "./settimer";
 
 import './games.css';
 
@@ -101,6 +102,9 @@ export const Games = () => {
           />
         ))}
       </section>
+      <div>
+        <Stopwatch />
+      </div>
     </div>
   );
 }
