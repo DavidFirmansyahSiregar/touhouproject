@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, } from "react-router-dom";
-import { Layouting } from "../PageLayout/Layouting";
+// import { Layouting } from "../PageLayout/Layouting";
 import { Home }  from "../Pages/Home/Home";
 import { Games } from "../Pages/Games/Games";
 import { MainStory } from "../Pages/MainStory/Mainstory";
@@ -14,8 +14,7 @@ import { Stopwatch } from "../Pages/Games/settimer"
 export const MainRoutes = () => {
   return (
     <Routes>
-        <Route path="/" element={<Layouting />}>
-            <Route index path="/Home" element={<Home />} />
+        <Route index path="/" element={<Home />}>
             <Route path="/Games" element={<Games />} />
             <Route path="/character" element={<Characters />}/>
             <Route path="/perks" element={<Ability />} />
