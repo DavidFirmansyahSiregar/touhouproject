@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import MemoryCard from "./components/MemoryCard";
-import { createMatrix } from './helper/shuffle';
+import MemoryCard from "../components/MemoryCard";
+import { createMatrix } from '../helper/shuffle';
 // import { Stopwatch } from "./settimer";
 
 import './games.css';
@@ -110,7 +110,7 @@ export const Games = () => {
   };
 
   return (
-    <div className="App">
+    <div>
       <section className="memory-game">
         {grid.map((cell, index) => (
           <MemoryCard

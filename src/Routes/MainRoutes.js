@@ -2,14 +2,14 @@ import React from "react";
 import { Routes, Route, } from "react-router-dom";
 import { Layouting } from "../PageLayout/Layouting";
 import { Home }  from "../Pages/Home/Home";
-import { Games } from "../Pages/Games/Games";
+import { Games } from "../Pages/Games/cardgame/Games";
 import { MainStory } from "../Pages/MainStory/Mainstory";
 import { Characters } from "../Pages/Character/Character";
 import { Ability } from "../Pages/Ability/Ability";
 import { Rule } from "../Pages/Rule/Rule";
 import { Forum } from "../Pages/Forum/Forum";
 import { Loading } from "../animation/loading"
-import { Stopwatch } from "../Pages/Games/settimer"
+// import { Stopwatch } from "../Pages/Games/settimer"
 
 export const MainRoutes = () => {
   return (
@@ -24,7 +24,7 @@ export const MainRoutes = () => {
             <Route path="/forum" element={<Forum />} />
         </Route>
           <Route path="/loading" element={<Loading />} />
-          <Route path="/timer" element={<Stopwatch  />} />
+          {/* <Route path="/timer" element={<Stopwatch  />} /> */}
     </Routes>
   )
 }
