@@ -5,7 +5,7 @@ export const Home = () => {
   return (
     <div>
         <h2>CSS Newsletter</h2>
-
+      
     <form action="/games">
       <div className="container">
       </div>
