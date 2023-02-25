@@ -4,6 +4,7 @@ import { Button, Popconfirm, } from "antd"
 import { HomeOutlined, PoweroffOutlined, SketchOutlined, } from '@ant-design/icons'
 import { Loading } from "../animation/loading"
 import "./layouting.css";
+// import Vague from "../material/vague.mp3"
 
 export const Layouting = () => {
     // const navigate = useNavigate();
@@ -32,7 +33,7 @@ export const Layouting = () => {
 
     return (
         <div className="layout-container">
-            
+        
             <div className="sidebar">
                 <NavLink className="sidebar-items" to={"/story"}>
                     Main Story
