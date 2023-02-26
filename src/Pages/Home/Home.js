@@ -1,20 +1,15 @@
 import React from 'react';
+import Vague from './vague.mp3'
 import './home.css';
 
 export const Home = () => {
+  const audio = new Audio(Vague);
+  audio.autoplay = true;
+  audio.loop = true;
+
   return (
     <div>
-        <h2>CSS Newsletter</h2>
-      
-    <form action="/games">
-      <div className="container">
-      </div>
-      <div className="container">
-        <input type="submit" value="Subscribe"></input>
-      </div>
-      <div>
-      </div>
-    </form>
+    
     </div>
-  )
-}
+  );
+};
