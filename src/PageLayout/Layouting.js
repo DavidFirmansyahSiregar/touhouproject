@@ -5,15 +5,18 @@ import {
   HomeOutlined,
   PoweroffOutlined,
   SketchOutlined,
+  PauseOutlined,
 } from "@ant-design/icons";
 import { Loading } from "../animation/loading";
 import "./layouting.css";
-import Vague from "./vague.mp3";
-
+// import vague from "./BGM/vague.mp3";
+// import Sakuya from "./BGM/Sakuya.mp3";
+// import Omae from "./BGM/Omae.mp3";
+import Patch from "./BGM/Patchouli.mp3";
 
 export const Layouting = () => {
   // const navigate = useNavigate();
-  const audio = new Audio(Vague);
+  const audio = new Audio(Patch);
   audio.autoplay = true;
   audio.loop = true;
 
@@ -38,10 +41,8 @@ export const Layouting = () => {
     setOpen(false);
   };
 
-
   return (
-    <div className="layout-container" >
-  
+    <div className="layout-container">
       <div className="sidebar">
         <NavLink className="sidebar-items" to={"/story"}>
           Main Story
@@ -57,6 +58,9 @@ export const Layouting = () => {
         </NavLink>
         <div>
           <Loading />
+          <div className="pause">
+          <PauseOutlined onClick={() => (audio.loop = false)} />
+          </div>
         </div>
       </div>
       <div className="right-side-container">
