@@ -1,7 +1,10 @@
-import React from 'react'
+export const opponentStats = {
+  level: 1,
+  name: 'Samus',
+  maxHealth: 188,
 
-export const Enemy = () => {
-  return (
-    <div>Enemy</div>
-  )
-}
+  skill: 5,
+  attack: 1,
+  defense: 1,
+  magicDefense: 1,
+};
