@@ -5,3 +5,4 @@ export const Characters = () => {
     <div>sesat</div>
   )
 }
+

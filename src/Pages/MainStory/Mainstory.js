@@ -5,3 +5,4 @@ export const MainStory = () => {
     <div>S</div>
   )
 }
+

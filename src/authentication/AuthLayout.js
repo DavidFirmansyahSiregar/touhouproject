@@ -19,7 +19,7 @@ export const AuthLayout = () => {
         <Content>
           <Outlet />
         </Content>
-        <Footer id="auth-footer" >@ 2022 Octopus-edc</Footer>
+        <Footer id="auth-footer" ></Footer>
       </Layout>
     </div>
   );

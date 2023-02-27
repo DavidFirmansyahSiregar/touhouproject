@@ -8,7 +8,10 @@ import { Characters } from "../Pages/Character/Character";
 import { Ability } from "../Pages/Ability/Ability";
 import { Rule } from "../Pages/Rule/Rule";
 import { Forum } from "../Pages/Forum/Forum";
-import { Loading } from "../animation/loading"
+// import { Home, Characters, Games, MainStory, Ability, Rule, Forum,} from "Pages";
+import { Loading } from "../animation/loading";
+import { SignIn } from "../authentication/SignIn";
+import { SignUp } from "../authentication/SignUp";
 // import { Stopwatch } from "../Pages/Games/settimer"
 
 export const MainRoutes = () => {
@@ -24,7 +27,10 @@ export const MainRoutes = () => {
             <Route path="/forum" element={<Forum />} />
         </Route>
           <Route path="/loading" element={<Loading />} />
+          <Route path="/signup" element={<SignUp />} />
+          <Route path="/signin" element={<SignIn />} />
           {/* <Route path="/timer" element={<Stopwatch  />} /> */}
     </Routes>
   )
 }
+
