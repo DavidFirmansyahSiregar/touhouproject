@@ -8,11 +8,14 @@ import {
 } from "@ant-design/icons";
 import { Loading } from "../animation/loading";
 import "./layouting.css";
-// import Vague from "./vague.mp3";
+import Vague from "./vague.mp3";
 
 
 export const Layouting = () => {
   // const navigate = useNavigate();
+  const audio = new Audio(Vague);
+  audio.autoplay = true;
+  audio.loop = true;
 
   const [confirmLoading, setConfirmLoading] = useState(false);
   const [open, setOpen] = useState(false);
