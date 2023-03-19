@@ -10,8 +10,9 @@ import { Rule } from "../Pages/Rule/Rule";
 import { Forum } from "../Pages/Forum/Forum";
 // import { Home, Characters, Games, MainStory, Ability, Rule, Forum,} from "Pages";
 import { Loading } from "../animation/loading";
-import { SignIn } from "../authentication/SignIn";
-import { SignUp } from "../authentication/SignUp";
+
+import { Login } from "../auth/login";
+import { SignUp } from "../auth/signup";
 // import { Stopwatch } from "../Pages/Games/settimer"
 
 export const MainRoutes = () => {
@@ -28,7 +29,7 @@ export const MainRoutes = () => {
         </Route>
           <Route path="/loading" element={<Loading />} />
           <Route path="/signup" element={<SignUp />} />
-          <Route path="/signin" element={<SignIn />} />
+          <Route path="/login" element={<Login />} />
           {/* <Route path="/timer" element={<Stopwatch  />} /> */}
     </Routes>
   )

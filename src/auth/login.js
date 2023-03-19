@@ -1,4 +1,5 @@
 import { useRef, useState, useEffect } from "react";
+import "./auth.css";
 
 export const Login = () => {
     const userRef = useRef ();
@@ -32,7 +33,7 @@ export const Login = () => {
                     <h1>You are logged in!</h1>
                     <br />
                     <p>
-                        <a href="#">Go to Home</a>
+                        <a href="/home">Go to Home</a>
                     </p>
                 </section>
             ) : (
@@ -64,7 +65,7 @@ export const Login = () => {
                 Need an Account?<br />
                 <span className="line">
                     {/*put router link here*/}
-                    <a href="#">Sign Up</a>
+                    <a href="/signup">Sign Up</a>
                 </span>
             </p>
         </section>

@@ -20,4 +20,5 @@
 
 .slide-2 {
     background-image: url("../material/Alice.png");
+    background-repeat:no-repeat;
 }
