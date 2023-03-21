@@ -21,7 +21,8 @@
 .slide-2 {
     background-image: url("../material/Alice.png");
     background-repeat:no-repeat;
-    height: 100vh;
+    background-size: 100vh;
     display: grid;
     align-items: center;
+    margin-left: 20px;
 }
